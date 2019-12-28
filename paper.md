@@ -46,10 +46,7 @@ mapping of logic queries to SPARQL. Another find is [ClioPatria](http://www.sema
 ## Application of SPARQLProg to biological databases
 
 Recently, a number of biological databases have been developed on the basis of RDF supporting SPARQL access. For effectively extracting information by combining these databases, writing complicated SPARQL queries are required. However, composing complex SPARQL queries is bothersome work due to the lack of abstract modularized structure in SPARQL. Thus, high-level programming methodology on the basis of SPARQL endpoint is necessary.
-Here, we use SPARQLProg technology to compose building blocks to realize high-level programming by wrapping access to existing SPARQL endpoints as Prolog code. The examples we developed include MBGD, KEGG OC, TogoVar, JCM, Allie, EBI BioSamples, UniProt, and DesGeNET. Future work includes using these Prolog codes as building blocks for integrative analysis.
-
-Uchiyama, I., Mihara, M., Nishide, H., Chiba, H., & Kato, M. (2018). MBGD update 2018: microbial genome database based on hierarchical orthology relations covering closely related and distantly related comparisons. Nucleic acids research, 47(D1), D382-D389.
-
+Here, we use SPARQLProg technology to compose building blocks to realize high-level programming by wrapping access to existing SPARQL endpoints as Prolog code. The examples we developed include MBGD, KEGG OC, TogoVar, JCM, Allie, EBI BioSamples, UniProt, and DesGeNET. Future work includes using these Prolog codes as building blocks for integrative analysis [@Uchiyama:2019].
 
 ## Extending the BioLink Model
 
