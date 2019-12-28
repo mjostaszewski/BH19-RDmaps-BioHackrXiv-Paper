@@ -1,6 +1,39 @@
-## Authors
-
+---
+title: 'Logic Programming Working Group'
+tags:
+  - logic programming
+authors:
 [Chris Mungall](https://orcid.org/0000-0002-6601-2165), William E. Byrd, [Pjotr Prins](http://orcid.org/0000-0002-8021-9162), Nada Amin, Deepak Unni, Hirokazu Chiba
+  - name: Chris Mungall
+    orcid: 0000-0002-8021-9162
+    affiliation: 1
+  - name: Pjotr Prins
+    orcid: 0000-0002-8021-9162
+    affiliation: 2
+  - name: Hirokazu Chiba
+    affiliation: 3
+  - name: Nada Amin
+    affiliation: 4
+  - name: Deepak Unni
+    affiliation: 5
+  - name: William E. Byrd
+    affiliation: 6
+affiliations:
+  - name: Molecular Ecosystems Biology, Berkeley Lab, USA
+    index: 1
+  - name: Dept. of Genetics, Genomics and Bioinformactics, University of Tennessee Health Science Center, Memphis, Tennessee, USA
+    index: 2
+  - name: Please fill in
+    index: 3
+  - name: Please fill in
+    index: 4
+  - name: Please fill in
+    index: 5
+  - name: University of Alabama, USA
+    index: 6
+date: 28 December 2019
+bibliography: paper.bib
+---
 
 ## Introduction
 
