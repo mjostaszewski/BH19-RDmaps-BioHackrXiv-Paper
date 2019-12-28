@@ -3,7 +3,6 @@ title: 'Logic Programming Working Group'
 tags:
   - logic programming
 authors:
-[Chris Mungall](https://orcid.org/0000-0002-6601-2165), William E. Byrd, [Pjotr Prins](http://orcid.org/0000-0002-8021-9162), Nada Amin, Deepak Unni, Hirokazu Chiba
   - name: Chris Mungall
     orcid: 0000-0002-8021-9162
     affiliation: 1
