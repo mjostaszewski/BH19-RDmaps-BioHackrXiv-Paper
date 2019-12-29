@@ -36,16 +36,17 @@ bibliography: paper.bib
 
 # Introduction
 
+
 '''Introduction on logic programming and projects for the Biohackathon'''
 
 Logic programming allows for powerful queries. During Biohackathon
 2019 we made a show case based on existing facilities for using
 logic programming in conjunction with SPARQL.
 
--![Logic programming resolver](logic-programming.png)
+-![Logic programming resolver \label{fig}](logic-programming.png)
 
 
-'''Short discussion on state of the art'''
+'''Short discussion on state of the art\ref{fig}'''
 
 [ClioPatria](http://www.semantic-web-journal.net/system/files/swj1074.pdf)
 by Jan Wielemaker the main author of SWI-Prolog. Amazingly, there
@@ -55,7 +56,16 @@ for example, though the repo is not found yet.
 
 # Results
 
+
 ## Application of SPARQLProg to biological databases
+
+
+    State the problem you worked on
+    Give the state-of-the art/plan
+    Describe what you have done/results starting with The working group created...
+    Write a conclusion
+    Write up any future work
+
 
 [SparqlProg](https://github.com/cmungall/sparqlprog) which provides
 sophisticated mapping of logic queries to SPARQL.
@@ -75,6 +85,12 @@ as building blocks for integrative analysis [@Uchiyama:2019].
 
 ## Extending the BioLink Model
 
+    State the problem you worked on
+    Give the state-of-the art/plan
+    Describe what you have done/results starting with The working group created...
+    Write a conclusion
+    Write up any future work
+
 The BioLink Model is a data model developed for representing
 biological and biomedical knowledge. It was designed with the goal of
 standardizing the way information is represented in a graph store
@@ -93,6 +109,12 @@ the model will have appropriate mappings to other schemas and
 ontologies.
 
 ##  Relational Biolink type inference for mediKanren
+
+    State the problem you worked on
+    Give the state-of-the art/plan
+    Describe what you have done/results starting with The working group created...
+    Write a conclusion
+    Write up any future work
 
 * Remote member Nada Amin, Chris Mungall, Deepak Unni, Will Byrd
 
