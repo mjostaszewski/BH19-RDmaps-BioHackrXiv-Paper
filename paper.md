@@ -20,9 +20,9 @@ authors:
 affiliations:
   - name: Molecular Ecosystems Biology, Berkeley Lab, USA
     index: 1
-  - name: Dept. of Genetics, Genomics and Bioinformactics, University of Tennessee Health Science Center, Memphis, Tennessee, USA
+  - name: Department of Genetics, Genomics and Informatics, The University of Tennessee Health Science Center, Memphis, TN, USA.
     index: 2
-  - name: Please fill in
+  - name: National Institute for Basic Biology | NIBB · Laboratory of Genome Informatics, Japan
     index: 3
   - name: Please fill in
     index: 4
@@ -41,6 +41,9 @@ bibliography: paper.bib
 Logic programming allows for powerful queries. During Biohackathon
 2019 we made a show case based on existing facilities for using
 logic programming in conjunction with SPARQL.
+
+-![Logic programming resolver](logic-programming.png)
+
 
 '''Short discussion on state of the art'''
 
