@@ -58,7 +58,7 @@ researcher writes a number of statements with variables and the logic
 engine will go through the solution space (all data) and find the
 matches\ref{fig}. Much more detail on the rationale and implementations of
 miniKanren and logic programming are well summarized in Byrd's book
-The Reasoned Schemer[@ReasonedSchemer], his PhD thesis[ByrdPhD] (or
+The Reasoned Schemer[@ReasonedSchemer], his PhD thesis[@ByrdPhD] (or
 one of Byrd's online talks).
 
 ![Caption Logic programming resolver \label{fig}](./logic-programming.png)
