@@ -69,7 +69,9 @@ created methods for bridging between SPARQL and in-memory data
 representations using Prolog; extended the Biolink model and added
 Relational Biolink type inference for mediKanren.
 
+<!--
 # Results
+-->
 
 ## Existing logic programming facilities for SPARQL
 
