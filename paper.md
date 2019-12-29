@@ -20,10 +20,10 @@ authors:
 affiliations:
   - name: Molecular Ecosystems Biology, Berkeley Lab, USA
     index: 1
-  - name: Department of Genetics, Genomics and Informatics, The University of Tennessee Health Science Center, Memphis, TN, USA.
-    index: 3
   - name: National Institute for Basic Biology | NIBB · Laboratory of Genome Informatics, Japan
     index: 2
+  - name: Department of Genetics, Genomics and Informatics, The University of Tennessee Health Science Center, Memphis, TN, USA.
+    index: 3
   - name: Please fill in
     index: 4
   - name: Please fill in
@@ -35,6 +35,7 @@ bibliography: paper.bib
 ---
 
 <!--
+
 The paper.md, bibtex and figure file can be found in this repo:
 
   https://github.com/journal-of-research-objects/Example-BioHackrXiv-Paper
