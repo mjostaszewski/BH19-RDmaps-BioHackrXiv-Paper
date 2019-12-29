@@ -89,37 +89,46 @@ SQL and SPARQL queries.
 
 ## Application of SPARQLProg to biological databases
 
-
+<!--
     State the problem you worked on
     Give the state-of-the art/plan
     Describe what you have done/results starting with The working group created...
     Write a conclusion
     Write up any future work
+-->
 
 
+A number of biological databases have been developed on the basis of
+RDF supporting SPARQL access, including
+[Uniprot](https://www.uniprot.org/),
+[NCBI Pubchem](https://pubchemdocs.ncbi.nlm.nih.gov/rdf) and the
+[EBI RDF platform](https://www.ebi.ac.uk/rdf/). Complicated SPARQL
+queries are required to effectively extract information combining such
+databases. Composing complex SPARQL queries is bothersome work due to
+the lack of abstract modularized structure in SPARQL. Thus, high-level
+programming methodology on the basis of SPARQL endpoints is wished
+for.  Here, we use
+[SPARQLProg](https://github.com/cmungall/sparqlprog) by Chris Mungall
+to compose building blocks to realize high-level programming by
+wrapping access to existing SPARQL endpoints in the form of Prolog
+code. The examples we developed include RDF databases MBGD, KEGG OC,
+TogoVar, JCM, Allie, EBI BioSamples, UniProt, and DisGeNET. Future
+work includes using these Prolog codes as building blocks for
+integrative analysis [@Uchiyama:2019]. SPARQLProg is written in
+SWI-Prolog and has a Python interface library. All code has been made
+available in the example directory of
 [SparqlProg](https://github.com/cmungall/sparqlprog) which provides
 sophisticated mapping of logic queries to SPARQL.
 
-Recently, a number of biological databases have been developed on the
-basis of RDF supporting SPARQL access. For effectively extracting
-information by combining these databases, writing complicated SPARQL
-queries are required. However, composing complex SPARQL queries is
-bothersome work due to the lack of abstract modularized structure in
-SPARQL. Thus, high-level programming methodology on the basis of
-SPARQL endpoint is necessary.  Here, we use SPARQLProg technology to
-compose building blocks to realize high-level programming by wrapping
-access to existing SPARQL endpoints as Prolog code. The examples we
-developed include MBGD, KEGG OC, TogoVar, JCM, Allie, EBI BioSamples,
-UniProt, and DesGeNET. Future work includes using these Prolog codes
-as building blocks for integrative analysis [@Uchiyama:2019].
-
 ## Extending the BioLink Model
 
+<!--
     State the problem you worked on
     Give the state-of-the art/plan
     Describe what you have done/results starting with The working group created...
     Write a conclusion
     Write up any future work
+-->
 
 The BioLink Model is a data model developed for representing
 biological and biomedical knowledge. It was designed with the goal of
@@ -140,11 +149,13 @@ ontologies.
 
 ##  Relational Biolink type inference for mediKanren
 
+<!--
     State the problem you worked on
     Give the state-of-the art/plan
     Describe what you have done/results starting with The working group created...
     Write a conclusion
     Write up any future work
+-->
 
 * Remote member Nada Amin, Chris Mungall, Deepak Unni, Will Byrd
 
