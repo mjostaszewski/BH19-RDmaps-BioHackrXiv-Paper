@@ -46,6 +46,8 @@ Domain Specific Language for logic programming. Interestingly, the
 core miniKanren language is very simple, with only three logical
 operators and one interface operator[@ReasonedSchemer].
 
+![Logic programming resolver traverses the solution space to find all matches \label{fig}](./logic-programming.png)
+
 The introducting of logic programming is particularly relevant in the
 context of multi-model data representations where data can be accessed
 in memory as free data structures, but also on disk where data can be
@@ -56,12 +58,10 @@ have a query engine that can mine them all efficiently.
 Logic programming fits biological research really well. Essentially, a
 researcher writes a number of statements with variables and the logic
 engine will go through the solution space (all data) and find the
-matches\ref{fig}. Much more detail on the rationale and implementations of
-miniKanren and logic programming are well summarized in Byrd's book
-The Reasoned Schemer[@ReasonedSchemer], his PhD thesis[@ByrdPhD] (or
-one of Byrd's online talks).
-
-![Caption Logic programming resolver \label{fig}](./logic-programming.png)
+matches (see figure \ref{fig}). Much more detail on the rationale and
+implementations of miniKanren and logic programming are well
+summarized in Byrd's book The Reasoned Schemer [@ReasonedSchemer], his
+PhD thesis [@ByrdPhD] (or one of Byrd's online talks).
 
 The 'Logic Programming' working group at the 2019 edition of Japanese
 Biohackathon researched state-of-the-art mapping between graph stores;
@@ -73,19 +73,17 @@ Relational Biolink type inference for mediKanren.
 
 ## Existing logic programming facilities for SPARQL
 
-Logic programming allows for powerful queries. During Biohackathon
-2019 we made a show case based on existing facilities for using
-logic programming in conjunction with SPARQL.
-
-
-'''Short discussion on state of the art\ref{fig}'''
-
+We researched current solutions for combining logic programming with
+SPARQL.
 [ClioPatria](http://www.semantic-web-journal.net/system/files/swj1074.pdf)
-by Jan Wielemaker the main author of SWI-Prolog. Amazingly, there
-exist even bindings for
+is an in-memory RDF quad-store tightly coupled with SWI-Prolog by Jan
+Wielemaker the main author of SWI-Prolog[@WielemakerBHO15]. SWI-Prolog
+is published under a BSD license and there exist even bindings for
 [ClioPatria and Python](http://wi.hwtk.de/WLP2018/Papers/WLP_2018_paper_4.pdf),
-for example, though the repo is not found yet.
-
+for example, though the repo is not found yet. We think ClioPatria and
+SWI-Prolog are particularly useful for teaching and (in-memory)
+semantic web applications. SWI-Prolog comes with client libraries for
+SQL and SPARQL queries.
 
 ## Application of SPARQLProg to biological databases
 
