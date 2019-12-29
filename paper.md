@@ -36,14 +36,46 @@ bibliography: paper.bib
 
 # Introduction
 
+Logic programming in the form of relational SQL queries on database
+tables and and SPARQL queries on semantic web graph data stores, is
+well known to many bioinformaticians. More advanced logic programming,
+however, is underutilized in bioinformatics.  Prolog, for example, is
+a high-level programming language that has its roots in first-order
+logic or first-order predicate calculus and Minikanren is an embedded
+Domain Specific Language for logic programming. Interestingly, the
+core miniKanren language is very simple, with only three logical
+operators and one interface operator[@ReasonedSchemer].
 
-'''Introduction on logic programming and projects for the Biohackathon'''
+The introducting of logic programming is particularly relevant in the
+context of multi-model data representations where data can be accessed
+in memory as free data structures, but also on disk where data can be
+represented as tables, trees (documents), and graphs. In
+bioinformatics we can make use of all these different data sources and
+have a query engine that can mine them all efficiently.
+
+Logic programming fits biological research really well. Essentially, a
+researcher writes a number of statements with variables and the logic
+engine will go through the solution space (all data) and find the
+matches\ref{fig}. Much more detail on the rationale and implementations of
+miniKanren and logic programming are well summarized in Byrd's book
+The Reasoned Schemer[@ReasonedSchemer], his PhD thesis[ByrdPhD] (or
+one of Byrd's online talks).
+
+![Caption Logic programming resolver \label{fig}](./logic-programming.png)
+
+The 'Logic Programming' working group at the 2019 edition of Japanese
+Biohackathon researched state-of-the-art mapping between graph stores;
+created methods for bridging between SPARQL and in-memory data
+representations using Prolog; extended the Biolink model and added
+Relational Biolink type inference for mediKanren.
+
+# Results
+
+## Existing logic programming facilities for SPARQL
 
 Logic programming allows for powerful queries. During Biohackathon
 2019 we made a show case based on existing facilities for using
 logic programming in conjunction with SPARQL.
-
--![Logic programming resolver \label{fig}](logic-programming.png)
 
 
 '''Short discussion on state of the art\ref{fig}'''
@@ -53,8 +85,6 @@ by Jan Wielemaker the main author of SWI-Prolog. Amazingly, there
 exist even bindings for
 [ClioPatria and Python](http://wi.hwtk.de/WLP2018/Papers/WLP_2018_paper_4.pdf),
 for example, though the repo is not found yet.
-
-# Results
 
 
 ## Application of SPARQLProg to biological databases
