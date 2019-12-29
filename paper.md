@@ -6,10 +6,10 @@ authors:
   - name: Chris Mungall
     orcid: 0000-0002-8021-9162
     affiliation: 1
+  - name: Hirokazu Chiba
+    affiliation: 2
   - name: Pjotr Prins
     orcid: 0000-0002-8021-9162
-    affiliation: 2
-  - name: Hirokazu Chiba
     affiliation: 3
   - name: Nada Amin
     affiliation: 4
@@ -21,9 +21,9 @@ affiliations:
   - name: Molecular Ecosystems Biology, Berkeley Lab, USA
     index: 1
   - name: Department of Genetics, Genomics and Informatics, The University of Tennessee Health Science Center, Memphis, TN, USA.
-    index: 2
-  - name: National Institute for Basic Biology | NIBB · Laboratory of Genome Informatics, Japan
     index: 3
+  - name: National Institute for Basic Biology | NIBB · Laboratory of Genome Informatics, Japan
+    index: 2
   - name: Please fill in
     index: 4
   - name: Please fill in
@@ -33,6 +33,18 @@ affiliations:
 date: 28 December 2019
 bibliography: paper.bib
 ---
+
+<!--
+The paper.md, bibtex and figure file can be found in this repo:
+
+  https://github.com/journal-of-research-objects/Example-BioHackrXiv-Paper
+
+To modify, please clone the repo. You can generate PDF of the paper by
+pasting above link (or yours) in
+
+  http://biohackrxiv.genenetwork.org/
+
+-->
 
 # Introduction
 
@@ -130,14 +142,16 @@ sophisticated mapping of logic queries to SPARQL.
     Write up any future work
 -->
 
-The BioLink Model is a data model developed for representing
-biological and biomedical knowledge. It was designed with the goal of
+The [BioLink Model](https://github.com/biolink/biolink-model) is a
+data model developed for representing biological and biomedical
+knowledge. It represents a schema and generated objects for biolink
+data model and upper ontology. It was designed with the goal of
 standardizing the way information is represented in a graph store
 regardless of the formalism used. The working group focused on
 extending this model to support representation of a wide variety of
 knowledge.
 
-The following tasks were accomplished as part of BH19:
+The following tasks were accomplished as part of the Biohackathon:
 
 1) represent Datasets, and its related metadata
 2) represent Family and Pedigree information, to support clinical knowledge
@@ -155,9 +169,11 @@ ontologies.
     Describe what you have done/results starting with The working group created...
     Write a conclusion
     Write up any future work
--->
 
 * Remote member Nada Amin, Chris Mungall, Deepak Unni, Will Byrd
+
+-->
+
 
 * Goal: implement a relational type inferencer for the Biolink model in miniKanren, which can be integrated into mediKanren
 
@@ -171,7 +187,7 @@ https://github.com/webyrd/mediKanren
 
 Chris and Deepak are guiding us wrt the Biolink semantics
 
-TODO
+Future work
 
 * integrate into the Racket mediKanren code
 
@@ -180,5 +196,10 @@ TODO
 * create query editor with decent type error messages, autocomplete, query synthesis, etc.
 
 # Discussion
+
+The working group concluded that there is ample scope for logic
+programming in bioinformatics. Future work inludes expansion of
+accessing semantic web databases using adding SPARQLProg, expanding
+the Biolink model and adding dynamic SPARQL support to miniKanren.
 
 # References
