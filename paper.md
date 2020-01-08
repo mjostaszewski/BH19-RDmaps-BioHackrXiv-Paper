@@ -124,10 +124,10 @@ for.  Here, we use
 [SPARQLProg](https://github.com/cmungall/sparqlprog) by Chris Mungall
 to compose building blocks to realize high-level programming by
 wrapping access to existing SPARQL endpoints in the form of Prolog
-code. The examples we developed include programs accessing RDF databases of MBGD, KEGG OC,
+code. The examples we developed include programs accessing RDF databases of MBGD [@Uchiyama:2019], KEGG OC,
 TogoVar, JCM, Allie, EBI BioSamples, UniProt, and DisGeNET. Future
 work includes using these Prolog codes as building blocks for
-integrative analysis [@Uchiyama:2019]. SPARQLProg is written in
+integrative analysis. SPARQLProg is written in
 SWI-Prolog and has a Python interface library. All code has been made
 available in the example directory of
 [SparqlProg](https://github.com/cmungall/sparqlprog) which provides
