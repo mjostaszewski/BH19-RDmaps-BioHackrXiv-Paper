@@ -61,7 +61,7 @@ operators and one interface operator [@ReasonedSchemer].
 
 ![Logic programming resolver traverses the solution space to find all matches \label{fig}](./logic-programming.png)
 
-The introducting of logic programming is particularly relevant in the
+The introduction of logic programming is particularly relevant in the
 context of multi-model data representations where data can be accessed
 in memory as free data structures, but also on disk where data can be
 represented as tables, trees (documents), and graphs. In
