@@ -57,7 +57,7 @@ a high-level programming language that has its roots in first-order
 logic or first-order predicate calculus and Minikanren is an embedded
 Domain Specific Language for logic programming. Interestingly, the
 core miniKanren language is very simple, with only three logical
-operators and one interface operator[@ReasonedSchemer].
+operators and one interface operator [@ReasonedSchemer].
 
 ![Logic programming resolver traverses the solution space to find all matches \label{fig}](./logic-programming.png)
 
@@ -92,7 +92,7 @@ We researched current solutions for combining logic programming with
 SPARQL.
 [ClioPatria](http://www.semantic-web-journal.net/system/files/swj1074.pdf)
 is an in-memory RDF quad-store tightly coupled with SWI-Prolog by Jan
-Wielemaker the main author of SWI-Prolog[@WielemakerBHO15]. SWI-Prolog
+Wielemaker the main author of SWI-Prolog [@WielemakerBHO15]. SWI-Prolog
 is published under a BSD license and there exist even bindings for
 [ClioPatria and Python](http://wi.hwtk.de/WLP2018/Papers/WLP_2018_paper_4.pdf),
 for example, though the repo is not found yet. We think ClioPatria and
