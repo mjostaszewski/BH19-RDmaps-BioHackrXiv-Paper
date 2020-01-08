@@ -20,7 +20,7 @@ authors:
 affiliations:
   - name: Molecular Ecosystems Biology, Berkeley Lab, USA
     index: 1
-  - name: National Institute for Basic Biology | NIBB · Laboratory of Genome Informatics, Japan
+  - name: Database Center for Life Science, Research Organization of Information and Systems, Japan
     index: 2
   - name: Department of Genetics, Genomics and Informatics, The University of Tennessee Health Science Center, Memphis, TN, USA.
     index: 3
@@ -57,11 +57,11 @@ a high-level programming language that has its roots in first-order
 logic or first-order predicate calculus and Minikanren is an embedded
 Domain Specific Language for logic programming. Interestingly, the
 core miniKanren language is very simple, with only three logical
-operators and one interface operator[@ReasonedSchemer].
+operators and one interface operator [@ReasonedSchemer].
 
 ![Logic programming resolver traverses the solution space to find all matches \label{fig}](./logic-programming.png)
 
-The introducting of logic programming is particularly relevant in the
+The introduction of logic programming is particularly relevant in the
 context of multi-model data representations where data can be accessed
 in memory as free data structures, but also on disk where data can be
 represented as tables, trees (documents), and graphs. In
@@ -77,7 +77,7 @@ summarized in Byrd's book The Reasoned Schemer [@ReasonedSchemer], his
 PhD thesis [@ByrdPhD] (or one of Byrd's online talks).
 
 The 'Logic Programming' working group at the 2019 edition of Japanese
-Biohackathon researched state-of-the-art mapping between graph stores;
+BioHackathon researched state-of-the-art mapping between graph stores;
 created methods for bridging between SPARQL and in-memory data
 representations using Prolog; extended the Biolink model and added
 Relational Biolink type inference for mediKanren.
@@ -92,7 +92,7 @@ We researched current solutions for combining logic programming with
 SPARQL.
 [ClioPatria](http://www.semantic-web-journal.net/system/files/swj1074.pdf)
 is an in-memory RDF quad-store tightly coupled with SWI-Prolog by Jan
-Wielemaker the main author of SWI-Prolog[@WielemakerBHO15]. SWI-Prolog
+Wielemaker the main author of SWI-Prolog [@WielemakerBHO15]. SWI-Prolog
 is published under a BSD license and there exist even bindings for
 [ClioPatria and Python](http://wi.hwtk.de/WLP2018/Papers/WLP_2018_paper_4.pdf),
 for example, though the repo is not found yet. We think ClioPatria and
@@ -124,10 +124,10 @@ for.  Here, we use
 [SPARQLProg](https://github.com/cmungall/sparqlprog) by Chris Mungall
 to compose building blocks to realize high-level programming by
 wrapping access to existing SPARQL endpoints in the form of Prolog
-code. The examples we developed include RDF databases MBGD, KEGG OC,
+code. The examples we developed include programs accessing RDF databases of MBGD [@Uchiyama:2019], KEGG OC,
 TogoVar, JCM, Allie, EBI BioSamples, UniProt, and DisGeNET. Future
 work includes using these Prolog codes as building blocks for
-integrative analysis [@Uchiyama:2019]. SPARQLProg is written in
+integrative analysis. SPARQLProg is written in
 SWI-Prolog and has a Python interface library. All code has been made
 available in the example directory of
 [SparqlProg](https://github.com/cmungall/sparqlprog) which provides
@@ -152,7 +152,7 @@ regardless of the formalism used. The working group focused on
 extending this model to support representation of a wide variety of
 knowledge.
 
-The following tasks were accomplished as part of the Biohackathon:
+The following tasks were accomplished as part of the BioHackathon:
 
 1) represent Datasets, and its related metadata
 2) represent Family and Pedigree information, to support clinical knowledge
