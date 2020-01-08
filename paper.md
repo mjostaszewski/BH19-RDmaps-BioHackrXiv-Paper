@@ -77,7 +77,7 @@ summarized in Byrd's book The Reasoned Schemer [@ReasonedSchemer], his
 PhD thesis [@ByrdPhD] (or one of Byrd's online talks).
 
 The 'Logic Programming' working group at the 2019 edition of Japanese
-Biohackathon researched state-of-the-art mapping between graph stores;
+BioHackathon researched state-of-the-art mapping between graph stores;
 created methods for bridging between SPARQL and in-memory data
 representations using Prolog; extended the Biolink model and added
 Relational Biolink type inference for mediKanren.
@@ -152,7 +152,7 @@ regardless of the formalism used. The working group focused on
 extending this model to support representation of a wide variety of
 knowledge.
 
-The following tasks were accomplished as part of the Biohackathon:
+The following tasks were accomplished as part of the BioHackathon:
 
 1) represent Datasets, and its related metadata
 2) represent Family and Pedigree information, to support clinical knowledge
