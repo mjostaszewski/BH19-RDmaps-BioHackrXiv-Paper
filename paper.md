@@ -20,7 +20,7 @@ authors:
 affiliations:
   - name: Molecular Ecosystems Biology, Berkeley Lab, USA
     index: 1
-  - name: National Institute for Basic Biology | NIBB · Laboratory of Genome Informatics, Japan
+  - name: Database Center for Life Science, Research Organization of Information and Systems, Japan
     index: 2
   - name: Department of Genetics, Genomics and Informatics, The University of Tennessee Health Science Center, Memphis, TN, USA.
     index: 3
