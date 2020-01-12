@@ -8,6 +8,10 @@ authors:
     affiliation: 1
   - name: Hirokazu Chiba
     affiliation: 2
+  - name: Shuichi Kawashima
+    affiliation: 2
+  - name: Yasunori Yamamoto
+    affiliation: 2
   - name: Pjotr Prins
     orcid: 0000-0002-8021-9162
     affiliation: 3
