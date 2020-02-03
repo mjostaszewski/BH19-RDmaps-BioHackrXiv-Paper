@@ -58,8 +58,8 @@ tables and SPARQL queries on semantic web graph data stores, is
 well known to many bioinformaticians. More advanced logic programming,
 however, is underutilized in bioinformatics.  Prolog, for example, is
 a high-level programming language that has its roots in first-order
-logic or first-order predicate calculus. miniKanren is an embedded
-Domain Specific Language for logic programming; core miniKanren is
+logic or first-order predicate calculus.  Another example, miniKanren, is an embedded
+Domain Specific Language for logic programming. Core miniKanren is
 exceptionally simple, with only three logical
 operators and one interface operator [@reasoned2nd].
 
