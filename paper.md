@@ -152,18 +152,20 @@ sophisticated mapping of logic queries to SPARQL.
 
 The [BioLink Model](https://github.com/biolink/biolink-model) is a
 data model developed for representing biological and biomedical
-knowledge. It represents a schema and generated objects for biolink
-data model and upper ontology. It was designed with the goal of
-standardizing the way information is represented in a graph store
+knowledge. It includes a schema and generated objects for the
+data model and upper ontology. The BioLink Model was designed with the goal of
+standardizing the way information is represented in a graph store,
 regardless of the formalism used. The working group focused on
 extending this model to support representation of a wide variety of
 knowledge.
 
 The following tasks were accomplished as part of the BioHackathon:
 
-1) represent Datasets, and its related metadata
-2) represent Family and Pedigree information, to support clinical knowledge
-3) make the provenance model more rich and descriptive
+\begin{enumerate}
+\item represent datasets, and their related metadata;
+\item represent family and pedigree information, to support clinical knowledge;
+\item and make the provenance model more rich and descriptive.
+\end{enumerate}
 
 For future work, the group will ensure that the new classes added to
 the model will have appropriate mappings to other schemas and
