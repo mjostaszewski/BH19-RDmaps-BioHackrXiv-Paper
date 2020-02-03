@@ -123,7 +123,7 @@ RDF format, supporting SPARQL access---for example,
 [Uniprot](https://www.uniprot.org/),
 [NCBI Pubchem](https://pubchemdocs.ncbi.nlm.nih.gov/rdf) and the
 [EBI RDF platform](https://www.ebi.ac.uk/rdf/). Complicated SPARQL
-queries are required to effectively extract information across multiple
+queries are required to effectively extract and combine information from multiple
 databases. Composing complex SPARQL queries is tedious and error-prone due to
 the lack of abstract modularized structure in SPARQL. Thus, high-level
 programming methodology on the basis of SPARQL endpoints is desirable.  Here, we realize high-level programming by using Chris Mungall's
