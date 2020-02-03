@@ -30,7 +30,7 @@ affiliations:
     index: 3
   - name: Harvard University, USA
     index: 4
-  - name: Please fill in
+  - name: Berkeley Lab, USA
     index: 5
   - name: University of Alabama at Birmingham, USA
     index: 6
