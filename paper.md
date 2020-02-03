@@ -118,8 +118,8 @@ SQL and SPARQL queries.
 -->
 
 
-A number of biological databases have been developed on the basis of
-RDF supporting SPARQL access, including
+A number of biological databases make their data available in
+RDF format, supporting SPARQL access---for example,
 [Uniprot](https://www.uniprot.org/),
 [NCBI Pubchem](https://pubchemdocs.ncbi.nlm.nih.gov/rdf) and the
 [EBI RDF platform](https://www.ebi.ac.uk/rdf/). Complicated SPARQL
