@@ -123,14 +123,13 @@ RDF format, supporting SPARQL access---for example,
 [Uniprot](https://www.uniprot.org/),
 [NCBI Pubchem](https://pubchemdocs.ncbi.nlm.nih.gov/rdf) and the
 [EBI RDF platform](https://www.ebi.ac.uk/rdf/). Complicated SPARQL
-queries are required to effectively extract information combining such
-databases. Composing complex SPARQL queries is bothersome work due to
+queries are required to effectively extract information across multiple
+databases. Composing complex SPARQL queries is tedious and error-prone due to
 the lack of abstract modularized structure in SPARQL. Thus, high-level
-programming methodology on the basis of SPARQL endpoints is wished
-for.  Here, we use
-[SPARQLProg](https://github.com/cmungall/sparqlprog) by Chris Mungall
-to compose building blocks to realize high-level programming by
-wrapping access to existing SPARQL endpoints in the form of Prolog
+programming methodology on the basis of SPARQL endpoints is desirable.  Here, we realize high-level programming by using Chris Mungall's
+[SPARQLProg](https://github.com/cmungall/sparqlprog)
+to compose query building blocks; SPARQLProg
+wraps access to existing SPARQL endpoints in the form of Prolog
 code. The examples we developed include programs accessing RDF databases of MBGD [@Uchiyama:2019], KEGG OC,
 TogoVar, JCM, Allie, EBI BioSamples, UniProt, and DisGeNET. Future
 work includes using these Prolog codes as building blocks for
