@@ -80,11 +80,14 @@ implementations of miniKanren and logic programming are well
 summarized in Byrd's book \emph{The Reasoned Schemer, Second Edition} [@reasoned2nd],
 PhD thesis [@ByrdPhD], and [online](https://www.youtube.com/watch?v=eQL48qYDwp4) [talks](https://www.youtube.com/watch?v=o3AHnyEf7IE).
 
-The `Logic Programming' working group at the 2019 edition of Japanese
-BioHackathon researched state-of-the-art mapping between graph stores;
-created methods for bridging between SPARQL and in-memory data
-representations using Prolog; extended the Biolink model and added
-Relational Biolink type inference for mediKanren.
+The `Logic Programming' working group at the 2019 edition of the
+annual Japanese BioHackathon applied logic programming to various problems.
+The working group:
+\begin{itemize}
+\item researched state-of-the-art mapping between graph stores;
+\item created methods for bridging between SPARQL and in-memory data representations using Prolog;
+\item extended the Biolink model and added Relational Biolink type inference for mediKanren.
+\end{itemize}
 
 <!--
 # Results
