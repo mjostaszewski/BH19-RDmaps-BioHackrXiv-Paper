@@ -28,13 +28,13 @@ affiliations:
     index: 2
   - name: Department of Genetics, Genomics and Informatics, The University of Tennessee Health Science Center, Memphis, TN, USA.
     index: 3
-  - name: Please fill in
+  - name: Harvard University, USA
     index: 4
   - name: Please fill in
     index: 5
-  - name: University of Alabama, USA
+  - name: University of Alabama at Birmingham, USA
     index: 6
-date: 28 December 2019
+date: 2 February 2020
 bibliography: paper.bib
 ---
 
