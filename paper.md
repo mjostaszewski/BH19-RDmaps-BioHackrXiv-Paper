@@ -86,7 +86,8 @@ The working group:
 \begin{itemize}
 \item researched state-of-the-art mapping between graph stores;
 \item created methods for bridging between SPARQL and in-memory data representations using Prolog;
-\item extended the Biolink model and added Relational Biolink type inference for mediKanren.
+\item extended the Biolink model;
+\item and added Relational Biolink type inference for mediKanren.
 \end{itemize}
 
 <!--
