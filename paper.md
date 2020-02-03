@@ -99,11 +99,11 @@ We researched current solutions for combining logic programming with
 SPARQL.
 [ClioPatria](http://www.semantic-web-journal.net/system/files/swj1074.pdf)
 is an in-memory RDF quad-store tightly coupled with SWI-Prolog by Jan
-Wielemaker the main author of SWI-Prolog [@WielemakerBHO15]. SWI-Prolog
-is published under a BSD license and there exist even bindings for
+Wielemaker, the main author of SWI-Prolog [@WielemakerBHO15]. SWI-Prolog
+is published under a BSD license, and there even exist bindings for
 [ClioPatria and Python](http://wi.hwtk.de/WLP2018/Papers/WLP_2018_paper_4.pdf),
-for example, though the repo is not found yet. We think ClioPatria and
-SWI-Prolog are particularly useful for teaching and (in-memory)
+for example, although we were unable to locate the source code. We think ClioPatria and
+SWI-Prolog are particularly useful for teaching, and for (in-memory)
 semantic web applications. SWI-Prolog comes with client libraries for
 SQL and SPARQL queries.
 
