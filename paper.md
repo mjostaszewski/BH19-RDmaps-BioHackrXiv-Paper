@@ -210,6 +210,6 @@ Future work
 The working group concluded that there is ample scope for logic
 programming in bioinformatics. Future work inludes expansion of
 accessing semantic web databases using adding SPARQLProg, expanding
-the Biolink model and adding dynamic SPARQL support to miniKanren.
+the BioLink model and adding dynamic SPARQL support to miniKanren.
 
 # References
