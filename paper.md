@@ -54,14 +54,14 @@ pasting above link (or yours) in
 # Introduction
 
 Logic programming in the form of relational SQL queries on database
-tables and and SPARQL queries on semantic web graph data stores, is
+tables and SPARQL queries on semantic web graph data stores, is
 well known to many bioinformaticians. More advanced logic programming,
 however, is underutilized in bioinformatics.  Prolog, for example, is
 a high-level programming language that has its roots in first-order
-logic or first-order predicate calculus and Minikanren is an embedded
+logic or first-order predicate calculus and miniKanren is an embedded
 Domain Specific Language for logic programming. Interestingly, the
 core miniKanren language is very simple, with only three logical
-operators and one interface operator [@ReasonedSchemer].
+operators and one interface operator [@reasoned2nd].
 
 ![Logic programming resolver traverses the solution space to find all matches \label{fig}](./logic-programming.png)
 
@@ -77,7 +77,7 @@ researcher writes a number of statements with variables and the logic
 engine will go through the solution space (all data) and find the
 matches (see figure \ref{fig}). Much more detail on the rationale and
 implementations of miniKanren and logic programming are well
-summarized in Byrd's book The Reasoned Schemer [@ReasonedSchemer], his
+summarized in Byrd's book The Reasoned Schemer [@reasoned2nd], his
 PhD thesis [@ByrdPhD] (or one of Byrd's online talks).
 
 The 'Logic Programming' working group at the 2019 edition of Japanese
