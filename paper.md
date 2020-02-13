@@ -183,4 +183,12 @@ The workflow integrating disease and pathway maps according to a given RD identi
 
 The workflow can be expanded on each step, adding i) new gene candidate resources, ii) new pathway databases or iii) introducing layout for text mining results and broaden the downstream map analysis. We will continue our work to explore these directions.
 
+## Acknowledgements
+
+This work was done during the The BioHackathon Europe, organised and funded by the ELIXIR Hub in November 2019 in Paris. We thank the organizers for an opportunity to participate in such a productive and collaborative event, and for accomodation.
+
+We thank Steve Laurie, Centro Nacional de Análisis Genómico (CNAG-CRG), Barcelona, Spain, for support in the domains of rare disesase phenotyping and genomics.
+
+We thank colleagues from the "Text-mining and semantic web technologies" project for developing dedicated API calls and advising on the use of text mining resources.
+
 ## References
