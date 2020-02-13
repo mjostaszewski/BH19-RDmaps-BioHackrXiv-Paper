@@ -149,7 +149,7 @@ Text mining information has inherently no layout nor rendering information. For 
 
 The newly implemented functionality integrated the pieces from **Step 2** in a mesh-like layout. See image below for an example. In the image, Wikipathways content is in the upper part of the map, text mining results in the middle, and the content from disease maps at the bottom.
 
-![An example map](assembled_map.png)
+![An example map generated for the Brugada syndrome based on its Orphanet identifier.](assembled_map.png)
 
 Moreover, we worked on an interface from MINERVA to a full pathway-based analysis and visualization of disease maps in HiPhathia web tool. The task is divided in back-end and front-end related work. The back-end was developed under the Java EE platform, using Java 11 and the Spring Framework plus Spring Batch for managing the job queue, and a Mongo database for data persistence. The front-end was prototyped using TypeScript and ReactJS.
 
