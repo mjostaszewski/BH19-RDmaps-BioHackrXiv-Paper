@@ -32,7 +32,6 @@ authors:
     orcid: 0000-0003-2632-9587
     affiliation: 3
   - name: Jose Luis Fernandez
-    orcid: 0000-0003-2632-9587
     affiliation: 3
   - name: Vincenza Colonna
     orcid: 0000-0002-3966-0474
