@@ -7,24 +7,15 @@ tags:
   - pathway diagrams
   - systems biomedicine
 authors:
-  - name: Marek Ostaszewski
-    orcid: 0000-0003-1473-370X
-    affiliation: 1
   - name: Piotr Gawron
     orcid: 0000-0002-9328-8052
     affiliation: 1
   - name: David Hoksza
     orcid: 0000-0003-4679-0557
     affiliation: 1
-  - name: Laura I. Furlong 
-    orcid: 0000-0002-9383-528X
-    affiliation: 2
-  - name: Janet Pinero 
+  - name: Janet Piñero 
     orcid: 0000-0003-1244-7654
     affiliation: 2
-  - name: Joaquin Dopazo
-    orcid: 0000-0003-3318-120X
-    affiliation: 3
   - name: Maria Pena Chilet
     orcid: 0000-0002-6445-9617
     affiliation: 3
@@ -36,10 +27,19 @@ authors:
   - name: Vincenza Colonna
     orcid: 0000-0002-3966-0474
     affiliation: 4
+  - name: Joaquin Dopazo
+    orcid: 0000-0003-3318-120X
+    affiliation: 3
+  - name: Laura I. Furlong 
+    orcid: 0000-0002-9383-528X
+    affiliation: 2
+  - name: Marek Ostaszewski
+    orcid: 0000-0003-1473-370X
+    affiliation: 1
 affiliations:
   - name: LCSB, University of Luxembourg, Luxembourg
     index: 1
-  - name: University Pompeu Fabra, Barcelona, Spain
+  - name: Research Programme on Biomedical Informatics (GRIB), Hospital del Mar Medical Research Institute (IMIM), Department of Experimental and Health Sciences, Pompeu Fabra University (UPF), Barcelona, Spain
     index: 2
   - name: Fundacion Progreso y Salud, Sevilla, Spain
     index: 3
@@ -66,7 +66,7 @@ pasting above link (or yours) in
 
 Investigation of causal mechanisms behind Rare Diseases (RDs) is challenging, as these disorders are not prevalent enough to be represented in major bioinformatics resources or pathway databases. At the same time, a number of disease-focused resources are developed which could offer insights into specific rare diseases, if searched systematically. During BioHackathon'19 we built on an existing, rich, open source/open access infrastructure focused on disease-related mechanisms. We focused on repositories with well-defined APIs to facilitate their integration. 
 
-We streamlined different tools and platforms to enable pan-resource searches for specific questions of the field of RD research. We relied on standardized definitions and encoding of disease phenotypes, supported the search process with high-throughput data, whenever applicable. Using these searches, we retrieved genes and variants relevant for the disease mechanisms. Using these relevant genes and variants, we identified enriched, publicly available pathway databases and disease maps, together with text mining results, to combine them into a custom disease map, generated on-the-fly. This way, a researcher is able to define an RD of choice, or encode its phenotype, to generate a relevant disease map prototype for further refinement.
+We streamlined different tools and platforms to enable pan-resource searches for specific questions of the field of RD research. We relied on standardized definitions and encoding of disease phenotypes, and supported the search process with high-throughput data, whenever applicable. Using these searches, we retrieved genes and variants relevant for the disease mechanisms. Using these relevant genes and variants, we identified enriched, publicly available pathway databases and disease maps, together with text mining results, to combine them into a custom disease map, generated on-the-fly. Using our workflow, a researcher is able to define an RD of choice, or encode its phenotype, to generate a relevant disease map prototype for further refinement.
 
 ## Approach and resources
 
@@ -82,7 +82,7 @@ All code is available in the open gitlab repository:
 ### Disease context
 In order to introduce disease context, we focused on two major resources: OrphaNet ([orpha.net](https://www.orpha.net)) and Human Phenotype Ontology (HPO) [@kohler_human_2017]. Unique identifiers of OrphaNet allow to identify an RD, and if this disease is still not classified, it is possible to identify a proximal OrphaNet id by similarity of HPO terms.
 
-For given OrphaNet identifiers, we obtained the list of relevant genes and variants by combining: i) gene-disease mapping of OrphaNet, ii) gene-disease and variant-disease mapping of DisGeNET [@pinero_disgenet_2015] ([disgenet.org](https://www.disgenet.org)), iii) variant-disease mapping of OpenTargets platform [@carvalho-silva_open_2019] ([opentargets.org](https://www.opentargets.org)) and iv) variant-disease mapping of ClinVar ([www.ncbi.nlm.nih.gov/clinvar/](https://www.ncbi.nlm.nih.gov/clinvar/)). Importantly, disease-associated variants were filtered for rarity using population allele frequencies obtained from Ensembl Variant Effect Predictor (VEP) ([www.ensembl.org/info/docs/tools/vep/](https://www.ensembl.org/info/docs/tools/vep/)).
+For given OrphaNet identifiers, we obtained the list of relevant genes and variants by combining: i) gene-disease mapping of OrphaNet, ii) gene-disease and variant-disease mapping from DisGeNET [@pinero_disgenet_2015] ([disgenet.org](https://www.disgenet.org)), iii) variant-disease mapping of OpenTargets platform [@carvalho-silva_open_2019] ([opentargets.org](https://www.opentargets.org)) and iv) variant-disease mapping of ClinVar ([www.ncbi.nlm.nih.gov/clinvar/](https://www.ncbi.nlm.nih.gov/clinvar/)). Importantly, disease-associated variants were filtered for rarity using population allele frequencies obtained from Ensembl Variant Effect Predictor (VEP) ([www.ensembl.org/info/docs/tools/vep/](https://www.ensembl.org/info/docs/tools/vep/)).
 
 In parallel, for the same OrphaNet identifiers, we searched ArrayExpress [@athar_arrayexpress_2019] ([www.ebi.ac.uk/arrayexpress/](https://www.ebi.ac.uk/arrayexpress/)) and Gene Expression Omnibus [@clough_gene_2016] ([www.ncbi.nlm.nih.gov/geo/](http://www.ncbi.nlm.nih.gov/geo/)) to retrieve a list of Differentially Expressed Genes (DEGs), to extend the the set of disease-associated genes.
 
@@ -106,7 +106,7 @@ To extend the use of the prototype disease map beyond visual exploration, we inv
 
 To obtain the disease-associated genes and variants, the workflow implements scripts to query [DisGeNET](http://www.disgenet.org/), [OpenTargets](https://www.opentargets.org/) and [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/). 
 
-Both DisGeNET and Open Targets scripts connect to the respective resources via their API and return a JSON file containing associated genes and their variants, including the association score provided by the respective platform. The scripts can be passed the required level of the association score and the maximum number of genes to be returned. The input to these scripts is a list of disease identifiers in the form of Orphanet identifiers. The Orphanet identifier is passed directly as query to Open Targets, however, DisGeNET requires UMLS identifier on its input and therefore [Ontology Lookup Service](https://www.ebi.ac.uk/ols/index) API is first called to translate the Orphanet identifiers to the corresponding UMLS identifieriers. All the parameters can be set in the workflow configuration files.
+Both DisGeNET and Open Targets scripts connect to the respective resources via their API and return a JSON file containing associated genes and their variants, including the association score provided by the respective platform. The scripts can be passed the required level of the association score and the maximum number of genes to be returned. The input to these scripts is a list of disease identifiers in the form of Orphanet identifiers. The Orphanet identifier is passed directly as query to Open Targets. The [Ontology Lookup Service](https://www.ebi.ac.uk/ols/index) API was used to translate the Orphanet identifiers to the corresponding UMLS identifiers to query DisGeNET. All the parameters can be set in the workflow configuration files.
 
 The list of genes and variants are then contrasted with ClinVar data which is provided as a preprocessed file. The script goes through the obtained genes and variants and carries out pairwise comparison of ClinVar non-pathogenic variants (and thus also genes) with the  DisGeNET and Open Targets genes and variants. The output is a combined list of genes and variants pertinent to given disease, together with a report showing the difference in representation of genes and variants across the resources. Additionally, the variants can be filtered by their allele frequency in several populations available in the [Ensembl](http://www.ensembl.org/index.html) database. This is done through the [Ensemble API endpoint](https://rest.ensembl.org/documentation/info/vep\_id\_post).
 
@@ -129,7 +129,7 @@ Disease maps hosted on MINERVA can be queried via API calls, and their content c
 #### Pathway databases
 We used the ``enrichR`` package, an R-based interface to the Enrichr server [@kuleshov_enrichr_2016] to calculate pathway enrichment for the seed genes. As ``enrichR`` allows for querying multiple packages at once, a configuration file (see below) allows to indicate, which pathway databases can be used. Currently, our workflow handles only the contents of Wikipathways.
 
-#### Text mining nad interaction databases
+#### Text mining and interaction databases
 
 **STRING**  
 STRING integrates primary and predicted interactions, includes annotated pathway knowledge, text-mining results and data obtained by ontology. The query to STRING retrieves the first ``n`` neighbors of the seed genes. The number of neighbors can be adjusted by modifying the configuration of the workflow (see below). Moreover, the score for the associations among the seed proteins and the extended list of proteins can be set by modifying the parameter score in the configuration file. By default, the score equals zero.
